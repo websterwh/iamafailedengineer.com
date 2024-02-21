@@ -3,26 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullscreen Image</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* This ensures the image covers the entire screen */
-        }
-    </style>
+    <title>Find the Failed Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="image.png" alt="Fullscreen Image">
+    <div class="container">
+        <div id="text" class="fade-in">Click to find the failed engineer</div>
+        <img id="image" src="image.png" alt="Failed Engineer" class="hidden">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
